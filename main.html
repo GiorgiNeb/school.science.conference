@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>School Conference Registration</title>
+		<link rel="stylesheet" href="./styles.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="main">
+			<div class="image"></div>
+			<header id="header" class="header">
+				<nav class="navigations">
+					<ul class="nav-list">
+						<li>
+							<a href="#header">Main</a>
+						</li>
+						<li>
+							<a href="#register">Registration</a>
+						</li>
+						<li>
+							<a href="#presentation">Presentation</a>
+						</li>
+					</ul>
+				</nav>
+				<h1>Welcome</h1>
+				<p>to 1st</p>
+				<p>School Conference of Science</p>
+			</header>
+			<form id="survey-form" class="form">
+				<h1 id="title">Please register here to attend:</h1>
+				<div class="registration" id="register">
+					<label id="name-label" for="name">First Name: <input id="name" type="text" class="inputform" placeholder="Please enter your first name" required/></label>
+				</div>
+				<div class="registration">
+					<label id="secondname" for="second-name">Second Name: <input id="secondname" type="text" class="inputform" placeholder="Please enter your second name" required/></label>
+				</div>
+				<div class="registration">
+					<label id="email-label" for="email">Email: <input id="email" type="email" class="inputform" placeholder="Please enter your email" required/></label>
+				</div>
+				<div class="registration">
+					<label id="number-label" for="number">Age: <input id="number" type="number" class="inputform" placeholder="Please enter your age" required min="8" max="90"/></label>
+				</div>
+				<h2 id="presentation">If you are going to be a speaker please fill in section below as well, otherwise just skip it.</h2>
+				<div class="registration">
+					<label id="presentation-titile" for="title">Presentation Title: <input id="titile" type="text" class="inputform" placeholder="Please enter your presentation title"/></label>
+				</div>
+				<div class="registration">
+					<p>Is your presentation about theoretical issue or experiment you conducted?</p>
+					<label class="presinput" for="preschooseT"><input id="preschooseT" type="radio" name="choose" value="Theoretical"> Theoretical</label>
+					<label class="presinput" for="preschooseE"><input id="preschooseE" type="radio" name="choose" value="Experiment"> Experiment</label>
+					</div>
+					<div class="registration">
+						<p class="presfieldP">What is a field of your presentation?</p>
+						<select id="dropdown" required>
+							<option disabled selected value>Select field of science</option>
+							<option>Chemistry</option>
+							<option>Physics</option>
+							<option>Biology</option>
+							<option>Astronomy</option>
+							<option>Astronomy</option>
+						</select>
+					</div>
+					<div class="registration">
+					<label class="fileattach" for="file">Please attach your presentation in ppt format <input id="file" type="file" name="choose"></label>
+				</div>
+				<div class="registration">
+					<p id="description">Please give us a breaf summary of your presentation: </p>
+					<textarea id="ptext" name="presentationtext" class="textare" placeholder="100 word max."></textarea>
+					</div>
+					<div class="registration">
+						<p>Do you have any special needs?</p>
+						<label id="special"><input type="checkbox" value="Dyslexia"> Dyslexia</label>
+						<label id="special"><input type="checkbox" value="Speech disorder"> Speech disorder</label>
+						<label id="special"><input type="checkbox" value="Physical disability"> Physical disability</label>
+						<label id="special"><input type="checkbox" value="Visual impairment"> Visual impairment</label>
+						<label id="special"><input type="checkbox" value="Other"> Other</label>
+					</div>
+				<div class="registration">
+					<button type="submit" id="submit" class="submitt">
+						Submit
+					</button>
+				</div> 
+			</form>
+		</div>
+	</body>
+</html>
