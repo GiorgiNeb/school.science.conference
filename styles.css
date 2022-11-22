@@ -1,0 +1,194 @@
+:root{
+	--blueColor: #FFFF33;
+	--textColor: #6666FF;
+	--ancolor: #0080FF;
+}
+
+*,*::before,*::after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.image {
+	height: 100vh;
+	width: 100%;
+	position: absolute;
+	z-index: -1;
+	background-image: url(https://thumbs.dreamstime.com/b/medical-science-scientific-research-abstract-backdrop-62195483.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	opacity: 0.2;
+}
+
+.header {
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 110px;
+	font-size: 120px;
+	color: var(--textColor);
+}
+
+.header p:first-of-type {
+	font-size: 40px;
+	color: #FF3333;
+	box-sizing: border-box;
+}
+
+.header p:last-of-type {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80px;
+	font-size: 5vw;
+	color: var(--textColor);
+	font-weight: bold;
+	box-shadow: 10px, 10px, #FF3333;
+	box-sizing: border-box;
+}
+
+.navigations {
+	display: flex;
+	width: 100%;
+	justify-content: flex-end;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: var(--ancolor); 
+	height: 50px;
+}
+
+.nav-list {
+	display: flex;
+
+	list-style: none;
+	height: 100%;
+}
+
+.nav-list a {
+	display: block;
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	padding: 5px;
+	height: 100%;
+	padding-right: 20px;
+	padding-top: 5px;
+}
+
+.nav-list a:hover {
+	background: black;
+}
+
+.form {
+	padding-top: 30px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #99CCFF;
+}
+
+.registration {
+	height: auto;
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+	justify-content: center;
+	align-items: left;
+	padding: 20px 150px;
+}
+
+.inputform {
+	display: flex;
+	border-color: black;
+	border-radius: 5px;
+	width: 100%;
+	height: 40px;
+	margin-top: 5px;
+}
+
+.registration label {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.form h1, h2{
+	color: #FF3333;
+}
+
+
+.form h2 {
+	margin-top: 30px;
+	width: 60%;
+	font-size: 23px;
+}
+
+.form p, presfieldP {
+	font-size: 20px;
+	width: 100%;
+	height: 20px;
+	text-align: left;
+	margin-bottom: 10px;
+	font-weight: bold;
+}
+
+.presinput {
+	width: 50%;
+	height: 30px;
+	font-weight: normal !important;
+}
+
+#dropdown {
+	width: 50%;
+	height: 30px;
+	border-radius: 5px;
+}
+
+.fileattach {
+	border: 2px solid #99004C;
+	height: 40px;
+	padding: 5px;
+}
+
+.textare {
+	width: 100%;
+	height: 80px;
+	border-radius: 5px;
+}
+
+.submitt {
+	display: block;
+	width: 120px;
+	height: 50px;
+	background-color: var(--ancolor);
+	border-radius: 10px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: bold;
+}
+
+.submitt:hover {
+	background-color: #FF3333;
+}
+
+.registration:last-of-type {
+	align-items: center;
+}
+
+
+#special {
+	font-weight: normal;
+	height: 25px;
+}
